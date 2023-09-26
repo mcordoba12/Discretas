@@ -29,7 +29,8 @@ public class Manager {
                     String description = scanner.next();
                     System.out.println("Ingrese la fecha limite");
                     String dateLimit = scanner.next();
-                    System.out.println("Ingrese la prioridad");
+                    System.out.println("Ingrese el  nivel de prioridad en una escala de 0 al 10 (Donde 0 es la prioridad mas baja y 10 la mas alta))");
+
                     int priority = scanner.nextInt();
 
                     System.out.println("¿Que ingresaras?");
@@ -51,9 +52,28 @@ public class Manager {
                     break;
                 case 2:
 
+                    System.out.println("Eliminar");
+                    System.out.println("Ingrese el id");
+                    String id2 = scanner.next();
+                    controller.delete(id2);
+
                     break;
 
                 case 3:
+                    System.out.println("Modificar");
+                    System.out.println("Ingrese el id");
+                    String id3 = scanner.next();
+                    System.out.println("Que desea modificar (escriba)");
+                    System.out.println("1. Nombre \n2. Descripcion \n3. Fecha limite \n4. Prioridad");
+                    String m = scanner.next();
+                    System.out.println("Ingrese el nuevo valor");
+                    String modify = scanner.next();
+
+                    controller.modify(modify, id3, m);
+
+                    break;
+
+                case 4:
                     counter = 1;
                     break;
                 default:
