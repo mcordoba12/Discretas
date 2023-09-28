@@ -1,4 +1,4 @@
-package Implementacion.Src.model;
+package Model.DataStructureInterfaces;
 
 public interface IHashNode {
     public IHashNode getNext();

@@ -4,21 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf65da86-1192-4883-9848-f7dbc18a66fe" name="Changes" comment="">
+    <list default="true" id="2b3d177d-60a8-4b2b-bdf0-6b6248b15141" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Integradora.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Agenda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/HashNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/HashTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/IHashNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/IHashTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Reminder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Agenda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructureInterfaces/IHashNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructureInterfaces/IHashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructureInterfaces/IPriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructureInterfaces/IStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/HashNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/HashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Heap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/HeapNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Reminder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/StackNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +36,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -38,10 +46,8 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2Vs2nkisPq4rp1RpUXqL4AmFCl0" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2W0MsxSWHDdWIp98gySoUpJ7cpi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -52,7 +58,6 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/angel/Documents/Src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,17 +65,20 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Model" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cf65da86-1192-4883-9848-f7dbc18a66fe" name="Changes" comment="" />
-      <created>1695610639030</created>
+      <changelist id="2b3d177d-60a8-4b2b-bdf0-6b6248b15141" name="Changes" comment="" />
+      <created>1695865257685</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1695610639030</updated>
-      <workItem from="1695610640256" duration="1125000" />
-      <workItem from="1695612088568" duration="430000" />
-      <workItem from="1695612805520" duration="24000" />
+      <updated>1695865257685</updated>
+      <workItem from="1695865258062" duration="1620000" />
     </task>
     <servers />
   </component>

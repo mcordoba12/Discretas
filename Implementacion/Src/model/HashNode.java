@@ -1,6 +1,6 @@
-package Implementacion.Src.model;
+package Model;
 
-public class HashNode <K,V> {
+public class HashNode <K,V>{
     private HashNode<K,V> next;
     private K key;
     private V value;
@@ -25,7 +25,7 @@ public class HashNode <K,V> {
 
     public void setKey(K key) {
         this.key = key;
-    } 
+    }
 
     public V getValue() {
         return value;
@@ -35,5 +35,4 @@ public class HashNode <K,V> {
         this.value = value;
     }
 
-    
 }

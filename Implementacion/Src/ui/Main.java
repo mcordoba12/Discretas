@@ -1,8 +1,10 @@
 package ui;
-import model.Controller;
 
 import java.util.Scanner;
-public class Manager {
+
+import Model.Controller;
+
+public class Main {
     static Scanner scanner = new Scanner(System.in);
     static Controller controller = new Controller();
 
@@ -83,5 +85,5 @@ public class Manager {
 
         }
     }
-}
 
+}

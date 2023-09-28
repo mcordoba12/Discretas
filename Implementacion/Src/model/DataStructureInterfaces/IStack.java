@@ -1,4 +1,4 @@
-package model;
+package Model.DataStructureInterfaces;
 
 public interface IStack <T> {
     public void push(T element);
@@ -7,5 +7,5 @@ public interface IStack <T> {
     public boolean isEmpty();
     public int size();
     public String print();
-    
+
 }

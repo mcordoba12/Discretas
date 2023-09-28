@@ -1,8 +1,8 @@
-package Implementacion.Src.model;
+package Model;
 
 public class Agenda {
     private String id;
-    private String name;   
+    private String name;
     private String description;
     private String dateLimit;
     private int priority;
@@ -15,7 +15,7 @@ public class Agenda {
         this.priority = priority;
     }
 
-     public String getId() {
+    public String getId() {
         return id;
     }
 
@@ -54,5 +54,4 @@ public class Agenda {
     public void setPriority(int priority) {
         this.priority = priority;
     }
-    
 }
