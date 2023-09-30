@@ -1,6 +1,4 @@
-package Model;
-
-import Model.DataStructureInterfaces.IStack;
+package model;
 
 public class Stack <T> implements IStack<T> {
     private StackNode<T> top;
@@ -64,5 +62,5 @@ public class Stack <T> implements IStack<T> {
     }
 
 
-
+    
 }

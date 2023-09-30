@@ -1,6 +1,8 @@
-package Model;
+package Model.DataStructure;
 
-public class Task extends Agenda{
+import Model.DataStructure.Agenda;
+
+public class Task extends Agenda {
     private String completed;
 
     public Task(String id, String name, String description, String dateLimit, int priority) {

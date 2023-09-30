@@ -1,4 +1,4 @@
-package Model;
+package Model.DataStructure;
 
 public class Agenda {
     private String id;

@@ -1,4 +1,4 @@
-package Model;
+package Model.DataStructure.Nodes;
 
 public class StackNode<T> {
     private T element;

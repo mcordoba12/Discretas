@@ -1,6 +1,8 @@
-package Model;
+package Model.DataStructure;
 import java.util.ArrayList;
-import Model.DataStructureInterfaces.IPriorityQueue;
+
+import Model.DataStructure.DataStructureInterfaces.IPriorityQueue;
+import Model.DataStructure.Nodes.HeapNode;
 
 public class Heap<K extends Comparable,V> implements IPriorityQueue<K,V> {
 
@@ -10,22 +12,22 @@ public class Heap<K extends Comparable,V> implements IPriorityQueue<K,V> {
 
     // Heap methods
 
-    public void maxHeapify(int from){
-        int left  = getLeft(from);
-        int right  = getRigth(from);
-        int largest = from;
+    public void maxHeapify(int position){
+        int left  = getLeft(position);
+        int right  = getRigth(position);
+        int largest = position;
 
         if (left < heapSize){
-            if (  list.get(left).getKey().compareTo(list.get(from).getKey()) > 0 )largest = left;
+            if (  list.get(left).getKey().compareTo(list.get(position).getKey()) > 0 )largest = left;
         }
 
         if (right < heapSize){
             if (  list.get(right).getKey().compareTo(list.get(largest).getKey()) > 0 ) largest = right;
         }
 
-        if (largest != from){
-            HeapNode temporal = list.get(from);
-            list.set(from, list.get(largest));
+        if (largest != position){
+            HeapNode temporal = list.get(position);
+            list.set(position, list.get(largest));
             list.set(largest, temporal);
             maxHeapify(largest);
         }

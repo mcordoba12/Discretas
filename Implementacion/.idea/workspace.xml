@@ -12,19 +12,22 @@
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Implementacion.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Agenda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/DataStructureInterfaces/IHashNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/DataStructureInterfaces/IHashTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/DataStructureInterfaces/IPriorityQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/DataStructureInterfaces/IStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/HashNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/HashTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Heap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/HeapNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Reminder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Stack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/StackNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Agenda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/DataStructureInterfaces/IHashNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/DataStructureInterfaces/IHashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/DataStructureInterfaces/IPriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/DataStructureInterfaces/IQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/DataStructureInterfaces/IStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/HashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Heap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/IQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Nodes/HashNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Nodes/HeapNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Nodes/QueueNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Nodes/StackNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Reminder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Task.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/ui/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,8 +38,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -58,10 +61,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/angel/Documents/Git Talleres/seguimiento-9-persistencia-mcordoba12",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -78,11 +84,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695865257685</updated>
-      <workItem from="1695865258062" duration="1620000" />
+      <workItem from="1695865258062" duration="16121000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../../Program Files/Java/jdk-19/lib/src.zip!/jdk.jlink/jdk/tools/jlink/resources/plugins.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

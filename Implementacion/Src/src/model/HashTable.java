@@ -1,8 +1,10 @@
-package Model;
+package model;
 
-import Model.DataStructureInterfaces.IHashTable;
+import Model.DataStructure.DataStructureInterfaces.IHashTable;
+import Model.DataStructure.Nodes.HashNode;
 
 public class HashTable<K, V> implements IHashTable<K, V> {
+
     private HashNode<K, V>[] table;
     private int size;
 
@@ -30,7 +32,7 @@ public class HashTable<K, V> implements IHashTable<K, V> {
     @Override
     public V search(K key) {
         int index = hash(key);
-        return search(table.get(index), key);
+        return search(table[index], key);
     }
 
     private V search(HashNode<K, V> node, K key) {
@@ -77,4 +79,5 @@ public class HashTable<K, V> implements IHashTable<K, V> {
         }
         return "Key: " + node.getKey() + ", Value: " + node.getValue() + "\n" + print(node.getNext());
     }
+
 }

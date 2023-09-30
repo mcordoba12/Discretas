@@ -2,7 +2,7 @@ package ui;
 
 import java.util.Scanner;
 
-import Model.Controller;
+import Model.Central.Controller;
 
 public class Main {
     static Scanner scanner = new Scanner(System.in);
@@ -58,7 +58,6 @@ public class Main {
                     System.out.println("Ingrese el id");
                     String id2 = scanner.next();
                     controller.delete(id2);
-
                     break;
 
                 case 3:
@@ -72,7 +71,6 @@ public class Main {
                     String modify = scanner.next();
 
                     controller.modify(modify, id3, m);
-
                     break;
 
                 case 4:
