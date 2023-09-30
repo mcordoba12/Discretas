@@ -1,5 +1,10 @@
+<<<<<<< HEAD:Implementacion/Src/model/Stack.java
 package Model;
 import Model.DataStructureInterfaces.IStack;
+=======
+package model;
+
+>>>>>>> 7e7908d3045be2a47d9654ac9acc6a241ab92b35:Implementacion/Src/src/model/Stack.java
 public class Stack <T> implements IStack<T> {
     private StackNode<T> top;
     private int size;
@@ -62,5 +67,5 @@ public class Stack <T> implements IStack<T> {
     }
 
 
-
+    
 }

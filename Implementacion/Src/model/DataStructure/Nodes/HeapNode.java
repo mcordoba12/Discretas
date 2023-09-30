@@ -1,22 +1,12 @@
-package Model;
+package Model.DataStructure.Nodes;
 
-public class HashNode <K,V>{
-    private HashNode<K,V> next;
+public class HeapNode<K extends Comparable, V> {
     private K key;
     private V value;
 
-    public HashNode(K key, V value) {
-        this.next = null;
+    public HeapNode(K key, V value) {
         this.key = key;
         this.value = value;
-    }
-
-    public HashNode<K,V> getNext() {
-        return next;
-    }
-
-    public void setNext(HashNode<K,V> next) {
-        this.next = next;
     }
 
     public K getKey() {

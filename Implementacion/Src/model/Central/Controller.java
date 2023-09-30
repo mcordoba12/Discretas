@@ -1,31 +1,25 @@
-package Model;
-import java.util.LinkedList;
-import java.util.PriorityQueue;
-import java.util.Queue;
+package Model.Central;
+import Model.DataStructure.*;
+import Model.DataStructure.DataStructureInterfaces.IPriorityQueue;
+
+
 public class Controller {
     private HashTable<String, Agenda> agenda;
-
-    private PriorityQueue<Integer, Task> prioritizedTasks; // Usar la cola de prioridad para tareas prioritarias
-    private Queue<Task> nonPrioritizedTasks; 
-
+    private Queue <Agenda> queue;
+    private IPriorityQueue<Integer, Task> priorityTasks  = new Heap<>();
     public Controller() {
-        agenda = new HashTable<String, Agenda>(100);
-
-        nonPrioritizedTasks = new LinkedList<Task>();
-
+        agenda = new HashTable<String, Agenda>();
+        queue = new Queue<>();
     }
-
     public void addTask(String Id, String name, String description, String dateLimit, int priority) {
         Task task = new Task(Id, name, description, dateLimit, priority);
+
         if (task.getPriority() == 0) {
-            // Si la tarea no tiene prioridad, agrégala a la cola FIFO (No prioritaria)
-            nonPrioritizedTasks.offer(task);
+            queue.add(task);
+            agenda.insert(task.getId(),task);
         } else {
-            // Si la tarea tiene prioridad, agrégala a la cola de prioridades (Prioritaria)
-            prioritizedTasks.insert(priority, task);
-    
-            // Después de agregar una tarea prioritaria, aplicamos heapSort para mantenerlas ordenadas
-            prioritizedTasks.heapSort();
+            priorityTasks.insert(task.getPriority(), task);
+            agenda.insert(task.getId(),task);
         }
 
     }
@@ -69,5 +63,29 @@ public class Controller {
                 break;
         }
         return "Se modifico correctamente";
+    }
+
+    public HashTable<String, Agenda> getAgenda() {
+        return agenda;
+    }
+
+    public void setAgenda(HashTable<String, Agenda> agenda) {
+        this.agenda = agenda;
+    }
+
+    public Queue<Agenda> getQueue() {
+        return queue;
+    }
+
+    public void setQueue(Queue<Agenda> queue) {
+        this.queue = queue;
+    }
+
+    public IPriorityQueue<Integer, Task> getPriorityTasks() {
+        return priorityTasks;
+    }
+
+    public void setPriorityTasks(IPriorityQueue<Integer, Task> priorityTasks) {
+        this.priorityTasks = priorityTasks;
     }
 }

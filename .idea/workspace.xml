@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9efae576-fc49-4260-a37d-b3ca61afed27" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Implementacion/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/Implementacion.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/Agenda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/DataStructureInterfaces/IHashNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/DataStructureInterfaces/IHashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/DataStructureInterfaces/IPriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/DataStructureInterfaces/IStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/HashNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/HashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/Heap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/HeapNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/Reminder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/StackNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/ui/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2W5aKdi6uKdihhTnlOGOskJRk9N" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/angel/IdeaProjects/Implementacion",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9efae576-fc49-4260-a37d-b3ca61afed27" name="Changes" comment="" />
+      <created>1696024834581</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696024834581</updated>
+      <workItem from="1696024835428" duration="80000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
