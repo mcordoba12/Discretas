@@ -1,7 +1,5 @@
 package Model;
-
 import Model.DataStructureInterfaces.IStack;
-
 public class Stack <T> implements IStack<T> {
     private StackNode<T> top;
     private int size;

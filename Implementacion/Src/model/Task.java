@@ -1,5 +1,4 @@
 package Model;
-
 public class Task extends Agenda{
     private String completed;
 

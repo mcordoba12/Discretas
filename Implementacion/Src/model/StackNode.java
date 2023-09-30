@@ -1,5 +1,4 @@
 package Model;
-
 public class StackNode<T> {
     private T element;
     private StackNode<T> next;
