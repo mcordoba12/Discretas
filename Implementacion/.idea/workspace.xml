@@ -28,6 +28,9 @@
       <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Reminder.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Stack.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/UserAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Test/ControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Test/HashTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/ui/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +42,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -57,11 +61,18 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/angel/Documents/Git Talleres/seguimiento-9-persistencia-mcordoba12",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "C:/Users/angel/IdeaProjects/Implementacion",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -75,6 +86,52 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Model" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Model.DataStructure" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.HashTest.testInsertAndSearch">
+    <configuration name="HashTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Implementacion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Model.Test" />
+      <option name="MAIN_CLASS_NAME" value="Model.Test.HashTest" />
+      <option name="METHOD_NAME" value="testDelete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashTest.testInsertAndSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Implementacion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Model.Test" />
+      <option name="MAIN_CLASS_NAME" value="Model.Test.HashTest" />
+      <option name="METHOD_NAME" value="testInsertAndSearch" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.HashTest.testInsertAndSearch" />
+        <item itemvalue="JUnit.HashTest.testDelete" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -85,6 +142,7 @@
       <option name="presentableId" value="Default" />
       <updated>1695865257685</updated>
       <workItem from="1695865258062" duration="16121000" />
+      <workItem from="1696024918871" duration="8108000" />
     </task>
     <servers />
   </component>

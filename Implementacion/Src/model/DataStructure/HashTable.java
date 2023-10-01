@@ -19,6 +19,10 @@ public class HashTable<K,V> implements IHashTable<K,V> {
 
     @Override
     public void insert(K key, V value) {
+        if (key == null) {
+            throw new IllegalArgumentException("La clave no puede ser nula.");
+        }
+
         int index = hash(key);
         HashNode<K, V> nodeToAdd = new HashNode<>(key, value);
 
@@ -30,6 +34,7 @@ public class HashTable<K,V> implements IHashTable<K,V> {
             table.set(index, nodeToAdd);
         }
     }
+
 
     @Override
     public V search(K key) {

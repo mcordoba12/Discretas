@@ -7,9 +7,12 @@ public class Controller {
     private HashTable<String, Agenda> agenda;
     private Queue <Agenda> queue;
     private IPriorityQueue<Integer, Task> priorityTasks  = new Heap<>();
+    private Stack<UserAction> userActionsStack;
+
     public Controller() {
         agenda = new HashTable<String, Agenda>();
         queue = new Queue<>();
+        userActionsStack = new Stack<>();
     }
     public void addTask(String Id, String name, String description, String dateLimit, int priority) {
         Task task = new Task(Id, name, description, dateLimit, priority);
