@@ -4,18 +4,21 @@ import Model.DataStructure.DataStructureInterfaces.IHashTable;
 import Model.DataStructure.Nodes.HashNode;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class HashTable<K,V> implements IHashTable<K,V> {
     private ArrayList<HashNode<K,V>> table;
 
     public HashTable() {
-        this.table = new ArrayList<>(97);
+        this.table = new ArrayList<>(Collections.nCopies(97, null));
     }
 
     public int hash(K key) {
-        int key1 = (int) Math.floor(table.size() *  ( (Math.abs(key.hashCode())) * (Math.sqrt(5) -1)/2) %1);
-        return key1;
+        int hashCode = key.hashCode();
+        int index = (hashCode % 97 + 97) % 97; // Asegura que el índice esté en el rango [0, 96]
+        return index;
     }
+
 
     @Override
     public void insert(K key, V value) {
@@ -55,24 +58,22 @@ public class HashTable<K,V> implements IHashTable<K,V> {
     @Override
     public void delete(K key) {
         int index = hash(key);
-        if (table.get(index).getKey().equals(key)) {
-
-            HashNode<K,V> node = table.get(index);
-            node = table.get(index).getNext();
-        }
-        delete(table.get(index), key);
+        table.set(index, delete(table.get(index), key));
     }
 
-    private void delete(HashNode<K, V> node, K key) {
+    private HashNode<K, V> delete(HashNode<K, V> node, K key) {
         if (node == null) {
-            return;
+            return null;
         }
-        if (node.getKey().equals(key)) {
-            node = node.getNext();
-            return;
-        }
-    }
 
+        if (node.getKey().equals(key)) {
+            // Encontramos la clave, la eliminamos
+            return node.getNext();
+        }
+
+        node.setNext(delete(node.getNext(), key));
+        return node;
+    }
     @Override
     public String print() {
         return null;
@@ -85,4 +86,5 @@ public class HashTable<K,V> implements IHashTable<K,V> {
     public void setTable(ArrayList<HashNode<K, V>> table) {
         this.table = table;
     }
+
 }

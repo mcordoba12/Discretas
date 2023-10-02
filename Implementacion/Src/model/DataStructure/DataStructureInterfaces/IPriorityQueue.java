@@ -5,4 +5,6 @@ public interface IPriorityQueue<K extends Comparable,V> {
     K getmaX ();
     String increaseKey(int position, K key);
     void insert (K key,V value);
+
+    int getHeapSize();
 }

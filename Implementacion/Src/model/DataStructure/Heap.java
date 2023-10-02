@@ -10,8 +10,6 @@ public class Heap<K extends Comparable,V> implements IPriorityQueue<K,V> {
 
     private int heapSize;
 
-    // Heap methods
-
     public void maxHeapify(int position){
         int left  = getLeft(position);
         int right  = getRigth(position);
@@ -119,9 +117,6 @@ public class Heap<K extends Comparable,V> implements IPriorityQueue<K,V> {
             position = getFather(position);
         }
     }
-
-    //Initial methods
-    //Constructor
     public Heap() {
         list = new ArrayList<>();
         heapSize = 0;

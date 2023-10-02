@@ -20,7 +20,6 @@
       <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/DataStructureInterfaces/IStack.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/HashTable.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Heap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/IQueue.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Nodes/HashNode.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Nodes/HeapNode.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Nodes/QueueNode.java" afterDir="false" />
@@ -31,6 +30,7 @@
       <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/UserAction.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Model/Test/ControllerTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Model/Test/HashTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Test/HeapTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/ui/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,8 +93,34 @@
       <recent name="Model.DataStructure" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HashTest.testInsertAndSearch">
-    <configuration name="HashTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="GUIApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ui.GUIApp" />
+      <module name="Implementacion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ui.Main" />
+      <module name="Implementacion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HeapTest.testHeapExtractMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Implementacion" />
       <extension name="coverage">
         <pattern>
@@ -103,14 +129,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Model.Test" />
-      <option name="MAIN_CLASS_NAME" value="Model.Test.HashTest" />
-      <option name="METHOD_NAME" value="testDelete" />
+      <option name="MAIN_CLASS_NAME" value="Model.Test.HeapTest" />
+      <option name="METHOD_NAME" value="testHeapExtractMax" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HashTest.testInsertAndSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HeapTest.testIncreaseKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Implementacion" />
       <extension name="coverage">
         <pattern>
@@ -119,8 +145,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Model.Test" />
-      <option name="MAIN_CLASS_NAME" value="Model.Test.HashTest" />
-      <option name="METHOD_NAME" value="testInsertAndSearch" />
+      <option name="MAIN_CLASS_NAME" value="Model.Test.HeapTest" />
+      <option name="METHOD_NAME" value="testIncreaseKey" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HeapTest.testInsertAndGetMaxPriority" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Implementacion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Model.Test" />
+      <option name="MAIN_CLASS_NAME" value="Model.Test.HeapTest" />
+      <option name="METHOD_NAME" value="testInsertAndGetMaxPriority" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -128,8 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HashTest.testInsertAndSearch" />
-        <item itemvalue="JUnit.HashTest.testDelete" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.GUIApp" />
+        <item itemvalue="JUnit.HeapTest.testHeapExtractMax" />
+        <item itemvalue="JUnit.HeapTest.testIncreaseKey" />
+        <item itemvalue="JUnit.HeapTest.testInsertAndGetMaxPriority" />
       </list>
     </recent_temporary>
   </component>
@@ -142,7 +187,7 @@
       <option name="presentableId" value="Default" />
       <updated>1695865257685</updated>
       <workItem from="1695865258062" duration="16121000" />
-      <workItem from="1696024918871" duration="8108000" />
+      <workItem from="1696024918871" duration="18131000" />
     </task>
     <servers />
   </component>
@@ -156,6 +201,15 @@
           <url>jar://$PROJECT_DIR$/../../../../Program Files/Java/jdk-19/lib/src.zip!/jdk.jlink/jdk/tools/jlink/resources/plugins.java</url>
           <line>6</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Model/Test/HeapTest.java</url>
+          <line>49</line>
+          <properties class="Model.Test.HeapTest" method="testHeapExtractMax">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

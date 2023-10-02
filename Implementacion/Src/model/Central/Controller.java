@@ -14,7 +14,7 @@ public class Controller {
         queue = new Queue<>();
         userActionsStack = new Stack<>();
     }
-    public void addTask(String Id, String name, String description, String dateLimit, int priority) {
+    public String addTask(String Id, String name, String description, String dateLimit, int priority) {
         Task task = new Task(Id, name, description, dateLimit, priority);
 
         if (task.getPriority() == 0) {
@@ -24,13 +24,13 @@ public class Controller {
             priorityTasks.insert(task.getPriority(), task);
             agenda.insert(task.getId(),task);
         }
-
+        return "Se agrego correctamente";
     }
 
-    public void addReminder(String Id, String name, String description, String dateLimit, int priority) {
+    public String addReminder(String Id, String name, String description, String dateLimit, int priority) {
         Reminder reminder = new Reminder(Id, name, description, dateLimit, priority);
         agenda.insert(Id, reminder);
-
+        return "Se agrego correctamente";
     }
 
     public Agenda search(String Id) {
@@ -59,13 +59,22 @@ public class Controller {
                 break;
             case "priority":
                 agenda.search(Id).setPriority(Integer.parseInt(modify));
-
                 break;
 
             default:
                 break;
         }
         return "Se modifico correctamente";
+    }
+
+    public void tareaCompleta(String id){
+        Task tarea = (Task) agenda.search(id);
+        tarea.setCompleted(true);
+    }
+
+    public void deshacer(){
+
+        
     }
 
     public HashTable<String, Agenda> getAgenda() {

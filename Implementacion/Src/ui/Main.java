@@ -35,9 +35,9 @@ public class Main {
 
                     int priority = scanner.nextInt();
 
-                    System.out.println("¿Que ingresaras?");
-                    System.out.println("1. Tarea");
-                    System.out.println("2. recordatorio");
+                    System.out.println("¿Que desea insertar?");
+                    System.out.println("1. Task");
+                    System.out.println("2. Reminder");
                     int option2 = scanner.nextInt();
                     switch (option2) {
                         case 1:
@@ -74,6 +74,14 @@ public class Main {
                     break;
 
                 case 4:
+                    System.out.println("Registro de completar tarea");
+                    System.out.println("Ingrese el id");
+                    String id4 = scanner.next();
+
+
+                    break;
+
+                case 5:
                     counter = 1;
                     break;
                 default:
