@@ -19,11 +19,17 @@ public class HashTest {
         Task task1 = new Task("1", "Tarea 1", "importante", "20/22/23", 8);
         Task tarea2 = new Task("2", "Tarea 4", " no importante", "20/21/23", 2);
         Task tarea3 = new Task("3", "Tarea 3", "importante", "20/12/23", 5);
+        Task tarea4 = new Task("10", "Tarea 3", "importante", "20/12/23", 5);
+        Task tarea5 = new Task("5", "Tarea 3", "importante", "20/12/23", 5);
+
 
         // Insertamos las tareas en la tabla hash
         hashTable.insert(task1.getId(), task1);
         hashTable.insert(tarea2.getId(), tarea2);
         hashTable.insert(tarea3.getId(), tarea3);
+        hashTable.insert(tarea4.getId(), tarea4);
+        hashTable.insert(tarea5.getId(), tarea5);
+
 
         // Verificamos que las tareas se puedan buscar correctamente
         assertEquals(task1, hashTable.search(task1.getId()));

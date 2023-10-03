@@ -1,19 +1,32 @@
 package Model.DataStructure;
 
 public class UserAction {
-    private String action;
-    private String taskDetails;
+    private UserActionType action;
+    private Agenda taskDetails;
 
-    public UserAction(String action, String taskDetails) {
+
+    public UserAction(UserActionType action, Agenda taskDetails) {
         this.action = action;
         this.taskDetails = taskDetails;
     }
 
-    public String getAction() {
+    public UserActionType getAction() {
         return action;
     }
 
-    public String getTaskDetails() {
+    public void setAction(UserActionType action) {
+        this.action = action;
+    }
+
+    public Agenda getTaskDetails() {
         return taskDetails;
     }
+
+    public void setTaskDetails(Agenda taskDetails) {
+        this.taskDetails = taskDetails;
+    }
+
+
+
+
 }

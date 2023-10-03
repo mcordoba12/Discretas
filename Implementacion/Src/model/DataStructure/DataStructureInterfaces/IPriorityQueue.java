@@ -7,4 +7,6 @@ public interface IPriorityQueue<K extends Comparable,V> {
     void insert (K key,V value);
 
     int getHeapSize();
+
+    void delete(V value);
 }

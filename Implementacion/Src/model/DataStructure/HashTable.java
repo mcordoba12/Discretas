@@ -9,14 +9,23 @@ import java.util.Collections;
 public class HashTable<K,V> implements IHashTable<K,V> {
     private ArrayList<HashNode<K,V>> table;
 
+
+
+
     public HashTable() {
-        this.table = new ArrayList<>(Collections.nCopies(97, null));
+        this.table = new ArrayList<>(Collections.nCopies(8, null));
     }
 
     public int hash(K key) {
-        int hashCode = key.hashCode();
-        int index = (hashCode % 97 + 97) % 97; // Asegura que el índice esté en el rango [0, 96]
-        return index;
+
+
+
+        double frac = (Math.sqrt(5) -1)/2;
+
+        double pruba = Math.abs(key.hashCode());
+
+        int key1 = (int) Math.floor(table.size() *  (( (Math.abs(key.hashCode())) * (Math.sqrt(5) -1)/2) %1));
+        return key1;
     }
 
 

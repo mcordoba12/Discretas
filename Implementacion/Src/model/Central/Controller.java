@@ -24,6 +24,7 @@ public class Controller {
             priorityTasks.insert(task.getPriority(), task);
             agenda.insert(task.getId(),task);
         }
+        userAction(0, task);
         return "Se agrego correctamente";
     }
 
@@ -37,46 +38,69 @@ public class Controller {
         return agenda.search(Id);
     }
 
-    public String delete(String Id) {
-        agenda.delete(Id);
+
+    public String deleteTask(String Id) {
+        Task task = (Task) agenda.search(Id);
+        agenda.delete(task.getId());
+        if (task.getPriority() == 0) {
+            queue.delete(task);
+        } else {
+            priorityTasks.delete(task);
+        }
+        userAction(1, task);
         return "Se elimino correctamente";
     }
 
     public String modify(String modify, String Id, String m) {
-        agenda.search(Id);
+        Agenda agendaToModify = agenda.search(Id);
+        Agenda copy = new Task(agendaToModify);
         switch (m) {
             case "name":
-                agenda.search(Id).setName(modify);
+                agendaToModify.setName(modify);
 
                 break;
             case "description":
-                agenda.search(Id).setDescription(modify);
+                agendaToModify.setDescription(modify);
 
                 break;
             case "dateLimit":
-                agenda.search(Id).setDateLimit(modify);
+                agendaToModify.setDateLimit(modify);
 
                 break;
             case "priority":
-                agenda.search(Id).setPriority(Integer.parseInt(modify));
+                agendaToModify.setPriority(Integer.parseInt(modify));
                 break;
 
             default:
                 break;
         }
+        userAction(2, copy);
         return "Se modifico correctamente";
     }
 
-    public void tareaCompleta(String id){
-        Task tarea = (Task) agenda.search(id);
-        tarea.setCompleted(true);
+
+    public void userAction(int action, Agenda agenda){
+        UserAction userAction = new UserAction(UserActionType.values()[action], agenda);
+        userActionsStack.push(userAction);
     }
 
-    public void deshacer(){
+    public void undone(){
+        UserAction userAction = userActionsStack.pop();
+        switch (userAction.getAction()){
+            case ADD:
+                deleteTask(userAction.getTaskDetails().getId());
+                break;
+            case DELETE:
+                addTask(userAction.getTaskDetails().getId(), userAction.getTaskDetails().getName(), userAction.getTaskDetails().getDescription(), userAction.getTaskDetails().getDateLimit(), userAction.getTaskDetails().getPriority());
+                break;
+            case MODIFY:
+                deleteTask(userAction.getTaskDetails().getId());
+                addTask(userAction.getTaskDetails().getId(), userAction.getTaskDetails().getName(), userAction.getTaskDetails().getDescription(), userAction.getTaskDetails().getDateLimit(), userAction.getTaskDetails().getPriority());
+                break;
+        }
 
-        
+
     }
-
     public HashTable<String, Agenda> getAgenda() {
         return agenda;
     }

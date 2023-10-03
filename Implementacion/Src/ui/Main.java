@@ -18,6 +18,9 @@ public class Main {
         while (counter != 1) {
             System.out.println("¿Que desea hacer?");
             System.out.println("1. Insertar");
+            System.out.println("2. Modificar");
+            System.out.println("3. Eliminar");
+            System.out.println("4. Deshacer");
             int option = scanner.nextInt();
 
             switch (option) {
@@ -57,7 +60,7 @@ public class Main {
                     System.out.println("Eliminar");
                     System.out.println("Ingrese el id");
                     String id2 = scanner.next();
-                    controller.delete(id2);
+                    controller.deleteTask(id2); //Falta el parametro por task
                     break;
 
                 case 3:
@@ -74,13 +77,8 @@ public class Main {
                     break;
 
                 case 4:
-                    System.out.println("Registro de completar tarea");
-                    System.out.println("Ingrese el id");
-                    String id4 = scanner.next();
-
-
+                    controller.undone();
                     break;
-
                 case 5:
                     counter = 1;
                     break;

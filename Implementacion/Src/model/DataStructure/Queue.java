@@ -63,6 +63,24 @@ public class Queue<T> implements IQueue<T> {
         size = 0;
     }
 
+    public void delete(T element) {
+        QueueNode<T> current = front;
+        QueueNode<T> previous = null;
+        while (current != null) {
+            if (current.getElement().equals(element)) {
+                if (previous == null) {
+                    front = current.getNext();
+                } else {
+                    previous.setNext(current.getNext());
+                }
+                size--;
+                return;
+            }
+            previous = current;
+            current = current.getNext();
+        }
+    }
+
 
 
 }
