@@ -1,7 +1,7 @@
 package Model.Test;
 import Model.DataStructure.DataStructureInterfaces.IPriorityQueue;
 import Model.DataStructure.Heap;
-import Model.DataStructure.Task;
+import Model.Objects.Task;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -62,8 +62,16 @@ public class HeapTest {
         assertEquals(1, priorityTasks.getHeapSize());
     }
 
+    @Test
+    public void testDelete(){
+        // Inserta tareas en el montículo
+        priorityTasks.insert(5, new Task("1", "Task 1", "Important task", "2023-10-15", 5));
+        priorityTasks.insert(3, new Task("2", "Task 2", "Less important task", "2023-10-20", 3));
+        priorityTasks.insert(7, new Task("3", "Task 3", "Very important task", "2023-10-10", 7));
 
+        // Elimina la tarea con prioridad 7
+        priorityTasks.delete(new Task("3", "Task 3", "Very important task", "2023-10-10", 7));
 
-
+    }
 
 }

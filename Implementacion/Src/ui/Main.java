@@ -1,9 +1,6 @@
 package ui;
-
 import java.util.Scanner;
-
 import Model.Central.Controller;
-
 public class Main {
     static Scanner scanner = new Scanner(System.in);
     static Controller controller = new Controller();
@@ -18,15 +15,15 @@ public class Main {
         while (counter != 1) {
             System.out.println("¿Que desea hacer?");
             System.out.println("1. Insertar");
-            System.out.println("2. Modificar");
-            System.out.println("3. Eliminar");
+            System.out.println("2. Eliminar");
+            System.out.println("3. Modificar");
             System.out.println("4. Deshacer");
             int option = scanner.nextInt();
 
             switch (option) {
                 case 1:
 
-                    System.out.println("Ingrese el id");
+                    System.out.println("Ingrese el id (Escriba 3 numeros)");
                     String id = scanner.next();
                     System.out.println("Ingrese el nombre");
                     String name = scanner.next();
@@ -60,7 +57,7 @@ public class Main {
                     System.out.println("Eliminar");
                     System.out.println("Ingrese el id");
                     String id2 = scanner.next();
-                    controller.deleteTask(id2); //Falta el parametro por task
+                    System.out.println(controller.deleteTask(id2));//Falta el parametro por task
                     break;
 
                 case 3:
@@ -77,7 +74,8 @@ public class Main {
                     break;
 
                 case 4:
-                    controller.undone();
+                    System.out.println(controller.undone());
+                    System.out.println(controller.mostrarEstadoTareas());
                     break;
                 case 5:
                     counter = 1;

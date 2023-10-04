@@ -9,16 +9,12 @@ import java.util.Collections;
 public class HashTable<K,V> implements IHashTable<K,V> {
     private ArrayList<HashNode<K,V>> table;
 
-
-
-
     public HashTable() {
         this.table = new ArrayList<>(Collections.nCopies(8, null));
     }
 
+
     public int hash(K key) {
-
-
 
         double frac = (Math.sqrt(5) -1)/2;
 
