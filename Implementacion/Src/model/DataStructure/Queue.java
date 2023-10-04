@@ -15,6 +15,7 @@ public class Queue<T> implements IQueue<T> {
     }
 
     @Override
+    // The `add` method in the `Queue` class is used to add an element to the queue.
     public void add(T element) {
         QueueNode<T> nodeToAdd = new QueueNode<T>(element);
         if (front == null) {
@@ -27,6 +28,9 @@ public class Queue<T> implements IQueue<T> {
         size++;
     }
 
+    /**
+     * @return
+     */
     @Override
     public T poll() {
         if (front == null) {
@@ -38,16 +42,33 @@ public class Queue<T> implements IQueue<T> {
         return element;
     }
 
+    /**
+     * The function checks if the front of a queue is null, indicating that the queue is empty.
+     *
+     * @return The method is returning a boolean value, which indicates whether the front of the data
+     * structure is null or not. If the front is null, it means the data structure is empty, so the
+     * method will return true. Otherwise, it will return false.
+     */
     @Override
     public boolean isEmpty() {
         return front == null;
     }
 
+    /**
+     * The function returns the size of a data structure.
+     *
+     * @return The size of the object.
+     */
     @Override
     public int size() {
         return size;
     }
 
+    /**
+     * The function returns the element at the front of a queue, or null if the queue is empty.
+     *
+     * @return The method is returning the element at the front of the queue.
+     */
     @Override
     public T peek() {
         if (front == null) {
@@ -56,6 +77,10 @@ public class Queue<T> implements IQueue<T> {
         return front.getElement();
     }
 
+    /**
+     * The clear() function sets the front and rear pointers to null and the size to 0, effectively
+     * clearing all elements from the data structure.
+     */
     @Override
     public void clear() {
         front = null;
@@ -63,6 +88,9 @@ public class Queue<T> implements IQueue<T> {
         size = 0;
     }
 
+    /**
+     * @param element
+     */
     public void delete(T element) {
         QueueNode<T> current = front;
         QueueNode<T> previous = null;

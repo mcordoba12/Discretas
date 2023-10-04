@@ -19,11 +19,13 @@ public class Task extends Agenda {
     }
 
 
-    /***
+    /**
+     * The function overrides the equals method to compare the ID of the current object with the ID of
+     * the given object.
      *
-     * Ahora se compara ids, el tipo de clave es crucial.
-     * @param obj
-     * @return
+     * @param obj The "obj" parameter is an object that is being compared to the current object for
+     * equality.
+     * @return The method is returning a boolean value.
      */
     @Override
     public boolean equals(Object obj) {
