@@ -5,34 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b3d177d-60a8-4b2b-bdf0-6b6248b15141" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Implementacion.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/DataStructureInterfaces/IHashNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/DataStructureInterfaces/IHashTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/DataStructureInterfaces/IPriorityQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/DataStructureInterfaces/IQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/DataStructureInterfaces/IStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/HashTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Heap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Nodes/HashNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Nodes/HeapNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Nodes/QueueNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Nodes/StackNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Stack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Objects/Agenda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Objects/Reminder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Objects/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Objects/UserAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Objects/UserActionType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Test/ControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Test/HashTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Test/HeapTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,11 +23,15 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 6
+}]]></component>
   <component name="ProjectId" id="2W0MsxSWHDdWIp98gySoUpJ7cpi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -74,6 +51,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/angel/Documents/Git Talleres/APO2-2023-2/6-Persistencia",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

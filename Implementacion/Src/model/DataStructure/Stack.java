@@ -18,6 +18,8 @@ public class Stack <T> implements IStack<T> {
     /**
      * The push function adds a new element to the top of the stack.
      *
+     *
+     * 
      * @param element The element to be pushed onto the stack.
      */
     @Override
