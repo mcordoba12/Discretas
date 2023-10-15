@@ -1,4 +1,4 @@
-package Model.DataStructure.Nodes;
+package model.DataStructure.Nodes;
 
 public class HeapNode<K extends Comparable, V> {
     private K key;

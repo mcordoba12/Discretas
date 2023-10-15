@@ -1,7 +1,8 @@
-package Model.DataStructure;
+package model.DataStructure;
 
-import Model.DataStructure.DataStructureInterfaces.IHashTable;
-import Model.DataStructure.Nodes.HashNode;
+import model.DataStructure.DataStructureInterfaces.IHashTable;
+import model.DataStructure.Nodes.HashNode;
+
 
 import java.util.ArrayList;
 import java.util.Collections;

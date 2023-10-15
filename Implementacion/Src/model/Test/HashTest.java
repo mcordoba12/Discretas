@@ -1,7 +1,7 @@
-package Model.Test;
+package model.Test;
 import static org.junit.Assert.*;
-import Model.DataStructure.HashTable;
-import Model.Objects.Task;
+import model.DataStructure.HashTable;
+import model.Objects.Task;
 import org.junit.Before;
 import org.junit.Test;
 

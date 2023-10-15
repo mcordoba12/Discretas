@@ -1,4 +1,4 @@
-package Model.DataStructure.DataStructureInterfaces;
+package model.DataStructure.DataStructureInterfaces;
 
 /** The code is defining an interface called `IPriorityQueue` which represents a priority queue data
 * structure.

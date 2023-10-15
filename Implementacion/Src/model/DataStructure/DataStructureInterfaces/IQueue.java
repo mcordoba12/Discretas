@@ -1,4 +1,4 @@
-package Model.DataStructure.DataStructureInterfaces;
+package model.DataStructure.DataStructureInterfaces;
 
 /**The code is defining an interface called `IQueue` with a generic type `E`.
 */

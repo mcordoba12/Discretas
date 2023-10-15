@@ -1,4 +1,4 @@
-package Model.DataStructure.DataStructureInterfaces;
+package model.DataStructure.DataStructureInterfaces;
 
 /** The code is defining an interface called `IHashNode`. This interface specifies the methods that a
 *hash node should have.

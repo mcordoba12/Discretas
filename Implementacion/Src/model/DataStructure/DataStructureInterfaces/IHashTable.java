@@ -1,4 +1,4 @@
-package Model.DataStructure.DataStructureInterfaces;
+package model.DataStructure.DataStructureInterfaces;
 
 /** The code is defining an interface called `IHashTable` which represents a hash table data structure.
 *The interface has four methods:

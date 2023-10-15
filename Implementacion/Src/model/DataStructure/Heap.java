@@ -1,8 +1,8 @@
-package Model.DataStructure;
+package model.DataStructure;
 import java.util.ArrayList;
 
-import Model.DataStructure.DataStructureInterfaces.IPriorityQueue;
-import Model.DataStructure.Nodes.HeapNode;
+import model.DataStructure.DataStructureInterfaces.IPriorityQueue;
+import model.DataStructure.Nodes.HeapNode;
 
 public class Heap<K extends Comparable,V> implements IPriorityQueue<K,V> {
 

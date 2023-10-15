@@ -1,7 +1,7 @@
-package Model.DataStructure;
+package model.DataStructure;
 
-import Model.DataStructure.DataStructureInterfaces.IStack;
-import Model.DataStructure.Nodes.StackNode;
+import model.DataStructure.DataStructureInterfaces.IStack;
+import model.DataStructure.Nodes.StackNode;
 
 public class Stack <T> implements IStack<T> {
     private StackNode<T> top;

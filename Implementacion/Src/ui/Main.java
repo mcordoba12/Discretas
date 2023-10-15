@@ -1,7 +1,7 @@
 package ui;
 
 import java.util.Scanner;
-import Model.Central.Controller;
+import model.Central.Controller;
 
 public class Main {
     static Scanner scanner = new Scanner(System.in);

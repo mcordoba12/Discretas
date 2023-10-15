@@ -1,54 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9efae576-fc49-4260-a37d-b3ca61afed27" name="Changes" comment="" />
+    <list default="true" id="41492a03-5b69-4e3d-abed-180814c8c3e6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Implementacion/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/Implementacion.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/DataStructure/DataStructureInterfaces/IHashNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/DataStructure/DataStructureInterfaces/IHashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/DataStructure/DataStructureInterfaces/IPriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/DataStructure/DataStructureInterfaces/IQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/DataStructure/DataStructureInterfaces/IStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/DataStructure/HashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/DataStructure/Heap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/DataStructure/Nodes/HashNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/DataStructure/Nodes/HeapNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/DataStructure/Nodes/QueueNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/DataStructure/Nodes/StackNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/DataStructure/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/Objects/Agenda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/Objects/Reminder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/Objects/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/Objects/UserAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/Objects/UserActionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/Test/ControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/Test/HashTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/Model/Test/HeapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion/src/ui/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Implementacion" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 3
-}</component>
-  <component name="ProjectId" id="2W5aKdi6uKdihhTnlOGOskJRk9N" />
+  <component name="ProjectId" id="2WoNT5IsWEhaptr1hiT6x5Nj7Q0" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/angel/Documents/New/Discretas/Implementacion",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/angel/Documents/New/Discretas&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ui.Main" />
+      <module name="Discretas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Discretas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model.Test" />
+      <option name="MAIN_CLASS_NAME" value="model.Test.ControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ControllerTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9efae576-fc49-4260-a37d-b3ca61afed27" name="Changes" comment="" />
-      <created>1696024834581</created>
+      <changelist id="41492a03-5b69-4e3d-abed-180814c8c3e6" name="Changes" comment="" />
+      <created>1697394976275</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1696024834581</updated>
-      <workItem from="1696024835428" duration="80000" />
-      <workItem from="1696509104079" duration="1101000" />
-      <workItem from="1696514976228" duration="79000" />
-      <workItem from="1697391786046" duration="168000" />
-      <workItem from="1697392986222" duration="10000" />
+      <updated>1697394976275</updated>
+      <workItem from="1697394977481" duration="61000" />
     </task>
     <servers />
   </component>

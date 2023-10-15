@@ -1,7 +1,7 @@
-package Model.Central;
-import Model.DataStructure.*;
-import Model.DataStructure.DataStructureInterfaces.IPriorityQueue;
-import Model.Objects.*;
+package model.Central;
+import model.DataStructure.*;
+import model.DataStructure.DataStructureInterfaces.IPriorityQueue;
+import model.Objects.*;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

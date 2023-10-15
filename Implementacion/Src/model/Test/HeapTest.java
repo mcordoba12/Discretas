@@ -1,7 +1,7 @@
-package Model.Test;
-import Model.DataStructure.DataStructureInterfaces.IPriorityQueue;
-import Model.DataStructure.Heap;
-import Model.Objects.Task;
+package model.Test;
+import model.DataStructure.DataStructureInterfaces.IPriorityQueue;
+import model.DataStructure.Heap;
+import model.Objects.Task;
 import org.junit.Before;
 import org.junit.Test;
 

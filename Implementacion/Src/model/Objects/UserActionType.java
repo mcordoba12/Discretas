@@ -1,4 +1,4 @@
-package Model.Objects;
+package model.Objects;
 
 public enum UserActionType {
     ADD, DELETE, MODIFY;

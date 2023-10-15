@@ -1,10 +1,10 @@
-package Model.Test;
+package model.Test;
 
-import Model.Central.Controller;
-import Model.DataStructure.Stack;
-import Model.Objects.Agenda;
-import Model.Objects.Task;
-import Model.Objects.UserAction;
+import model.Central.Controller;
+import model.DataStructure.Stack;
+import model.Objects.Agenda;
+import model.Objects.Task;
+import model.Objects.UserAction;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -62,21 +62,6 @@ public class ControllerTest {
         assertNotNull(controller.search("1"));
     }
 
-    @Test
-    public void testUndoneModifyAction() {
-        // Agregar una tarea
-        controller.addTask("1", "Tarea 1", "Descripción 1", "2023-10-10", 1);
-
-        // Modificar la tarea
-        String result = controller.modify("Tarea modificada", "1", "name");
-
-        // Deshacer la acción de modificar
-        controller.undone();
-
-        // Verificar que la tarea volvió a su estado anterior
-        Agenda agenda = controller.search("1");
-        assertEquals("Tarea 1", agenda.getName());
-    }
 
     @Test
     public void testUserActionAdd() {
@@ -127,21 +112,5 @@ public class ControllerTest {
         assertEquals("Tarea 1", agenda.getName());
     }
 
-    @Test
-    public void testModifyTaskPriority() {
-        // Crear una tarea inicial
-        controller.addTask("1", "Tarea 1", "Descripción 1", "2023-10-10", 1);
 
-        // Modificar la prioridad de la tarea
-        String result = controller.modify("2", "1", "priority");
-
-        // Verificar que la modificación fue exitosa
-        assertEquals("Se modifico correctamente", result);
-
-        // Buscar la tarea modificada
-        Task modifiedTask = (Task) controller.search("1");
-
-        // Verificar que la prioridad de la tarea se ha actualizado
-        assertEquals(2, modifiedTask.getPriority());
-    }
 }

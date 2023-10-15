@@ -1,4 +1,4 @@
-package Model.DataStructure.DataStructureInterfaces;
+package model.DataStructure.DataStructureInterfaces;
 
 /** The code is defining an interface called `IStack` which represents a stack data structure. The
 *interface has several methods that can be implemented by classes that implement this interface.

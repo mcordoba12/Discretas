@@ -1,6 +1,6 @@
-package Model.DataStructure;
-import Model.DataStructure.DataStructureInterfaces.IQueue;
-import Model.DataStructure.Nodes.QueueNode;
+package model.DataStructure;
+import model.DataStructure.DataStructureInterfaces.IQueue;
+import model.DataStructure.Nodes.QueueNode;
 
 public class Queue<T> implements IQueue<T> {
 
