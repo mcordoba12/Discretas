@@ -8,16 +8,31 @@ import Model.Objects.UserAction;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.PriorityQueue;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ControllerTest {
     private Controller controller;
+    private Date date1;
+    private Date date2;
+    private Date date3;
 
     @Before
     public void setUp() {
+
         controller = new Controller();
+        try {
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+            date1 = dateFormat.parse("2023-10-15");
+            date2 = dateFormat.parse("2023-10-20");
+            date3 = dateFormat.parse("2023-10-10");
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
     }
 
     @Test
@@ -66,7 +81,7 @@ public class ControllerTest {
     @Test
     public void testUserActionAdd() {
         // Crear una tarea
-        Task task = new Task("1", "Tarea 1", "Descripción 1", "2023-10-10", 1);
+        Task task = new Task("1", "Tarea 1", "Descripción 1", date1, 1);
 
         // Agregar la tarea utilizando el método addTask
         String result = controller.addTask("1", "Tarea 1", "Descripción 1", "2023-10-10", 1);
@@ -83,7 +98,7 @@ public class ControllerTest {
     @Test
     public void testUserActionDelete() {
         // Crear una tarea
-        Task task = new Task("1", "Tarea 1", "Descripción 1", "2023-10-10", 1);
+        Task task = new Task("1", "Tarea 1", "Descripción 1", date1, 1);
 
         // Agregar la tarea
         controller.addTask("1", "Tarea 1", "Descripción 1", "2023-10-10", 1);
@@ -99,7 +114,7 @@ public class ControllerTest {
     @Test
     public void testUserActionModify() {
         // Crear una tarea
-        Task task = new Task("1", "Tarea 1", "Descripción 1", "2023-10-10", 1);
+        Task task = new Task("1", "Tarea 1", "Descripción 1", date3, 1);
 
         // Agregar la tarea
         controller.addTask("1", "Tarea 1", "Descripción 1", "2023-10-10", 1);

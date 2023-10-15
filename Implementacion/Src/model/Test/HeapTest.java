@@ -5,21 +5,36 @@ import Model.Objects.Task;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import static org.junit.Assert.*;
 public class HeapTest {
-
     private IPriorityQueue<Integer, Task> priorityTasks;
+    private Date date1;
+    private Date date2;
+    private Date date3;
 
     @Before
     public void setUp() {
         priorityTasks = new Heap<>();
+        try {
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+            date1 = dateFormat.parse("2023-10-15");
+            date2 = dateFormat.parse("2023-10-20");
+            date3 = dateFormat.parse("2023-10-10");
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
     }
 
     @Test
     public void testInsertAndGetMaxPriority() {
-        priorityTasks.insert(5, new Task("1", "Task 1", "Important task", "2023-10-15", 5));
-        priorityTasks.insert(3, new Task("2", "Task 2", "Less important task", "2023-10-20", 3));
-        priorityTasks.insert(7, new Task("3", "Task 3", "Very important task", "2023-10-10", 7));
+
+        priorityTasks.insert(5, new Task("1", "Task 1", "Important task", date1, 5));
+        priorityTasks.insert(3, new Task("2", "Task 2", "Less important task", date2, 3));
+        priorityTasks.insert(7, new Task("3", "Task 3", "Very important task", date3, 7));
 
         int maxPriority = priorityTasks.getmaX();
 
@@ -29,8 +44,8 @@ public class HeapTest {
 
     @Test
     public void testIncreaseKey() {
-        Task task1 = new Task("1", "Task 1", "Important task", "2023-10-15", 5);
-        Task task2 = new Task("2", "Task 2", "Less important task", "2023-10-20", 3);
+        Task task1 = new Task("1", "Task 1", "Important task", date1, 5);
+        Task task2 = new Task("2", "Task 2", "Less important task", date2, 3);
 
         // Inserta las tareas en el montículo
         priorityTasks.insert(5, task1);
@@ -49,8 +64,8 @@ public class HeapTest {
     @Test
     public void testHeapExtractMax() {
         // Inserta tareas en el montículo
-        priorityTasks.insert(5, new Task("1", "Task 1", "Important task", "2023-10-15", 5));
-        priorityTasks.insert(3, new Task("2", "Task 2", "Less important task", "2023-10-20", 3));
+        priorityTasks.insert(5, new Task("1", "Task 1", "Important task", date1, 5));
+        priorityTasks.insert(3, new Task("2", "Task 2", "Less important task", date2, 3));
 
         // Extrae la máxima prioridad
         int maxPriority = priorityTasks.heapExtractMax();
@@ -65,12 +80,12 @@ public class HeapTest {
     @Test
     public void testDelete(){
         // Inserta tareas en el montículo
-        priorityTasks.insert(5, new Task("1", "Task 1", "Important task", "2023-10-15", 5));
-        priorityTasks.insert(3, new Task("2", "Task 2", "Less important task", "2023-10-20", 3));
-        priorityTasks.insert(7, new Task("3", "Task 3", "Very important task", "2023-10-10", 7));
+        priorityTasks.insert(5, new Task("1", "Task 1", "Important task", date1, 5));
+        priorityTasks.insert(3, new Task("2", "Task 2", "Less important task", date3, 3));
+        priorityTasks.insert(7, new Task("3", "Task 3", "Very important task", date2, 7));
 
         // Elimina la tarea con prioridad 7
-        priorityTasks.delete(new Task("3", "Task 3", "Very important task", "2023-10-10", 7));
+        priorityTasks.delete(new Task("3", "Task 3", "Very important task", date2, 7));
 
     }
 

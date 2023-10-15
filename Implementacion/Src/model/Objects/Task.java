@@ -1,8 +1,10 @@
 package Model.Objects;
 
+import java.util.Date;
+
 public class Task extends Agenda {
 
-    public Task(String id, String name, String description, String dateLimit, int priority) {
+    public Task(String id, String name, String description, Date dateLimit, int priority) {
         super(id, name, description, dateLimit, priority);
     }
 

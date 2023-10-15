@@ -5,7 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b3d177d-60a8-4b2b-bdf0-6b6248b15141" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementacion.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/DataStructureInterfaces/IHashNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/DataStructureInterfaces/IHashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/DataStructureInterfaces/IPriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/DataStructureInterfaces/IQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/DataStructureInterfaces/IStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/HashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Heap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Nodes/HashNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Nodes/HeapNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Nodes/QueueNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Nodes/StackNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructure/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Objects/Agenda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Objects/Reminder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Objects/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Objects/UserAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Objects/UserActionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Test/ControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Test/HashTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Test/HeapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,45 +50,40 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
   <component name="ProjectId" id="2W0MsxSWHDdWIp98gySoUpJ7cpi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/angel/Documents/Git Talleres/APO2-2023-2/6-Persistencia",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/angel/IdeaProjects/Implementacion&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Model" />
@@ -87,6 +109,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HashTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Implementacion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Model.Test" />
+      <option name="MAIN_CLASS_NAME" value="Model.Test.HashTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Implementacion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Model.Test" />
+      <option name="MAIN_CLASS_NAME" value="Model.Test.HashTest" />
+      <option name="METHOD_NAME" value="testDelete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HeapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Implementacion" />
       <extension name="coverage">
@@ -98,22 +151,6 @@
       <option name="PACKAGE_NAME" value="Model.Test" />
       <option name="MAIN_CLASS_NAME" value="Model.Test.HeapTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HeapTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Implementacion" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Model.Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Model.Test" />
-      <option name="MAIN_CLASS_NAME" value="Model.Test.HeapTest" />
-      <option name="METHOD_NAME" value="testDelete" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,29 +171,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HeapTest.testInsertAndGetMaxPriority" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Implementacion" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Model.Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Model.Test" />
-      <option name="MAIN_CLASS_NAME" value="Model.Test.HeapTest" />
-      <option name="METHOD_NAME" value="testInsertAndGetMaxPriority" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.HashTest.testDelete" />
+        <item itemvalue="JUnit.HashTest" />
         <item itemvalue="JUnit.HeapTest" />
         <item itemvalue="JUnit.HeapTest.testHeapExtractMax" />
-        <item itemvalue="JUnit.HeapTest.testInsertAndGetMaxPriority" />
-        <item itemvalue="JUnit.HeapTest.testDelete" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +190,11 @@
       <option name="presentableId" value="Default" />
       <updated>1695865257685</updated>
       <workItem from="1695865258062" duration="16121000" />
-      <workItem from="1696024918871" duration="55871000" />
+      <workItem from="1696024918871" duration="55881000" />
+      <workItem from="1696597693218" duration="190000" />
+      <workItem from="1696787635930" duration="2760000" />
+      <workItem from="1697382493402" duration="28000" />
+      <workItem from="1697385758609" duration="4874000" />
     </task>
     <servers />
   </component>

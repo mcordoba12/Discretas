@@ -3,6 +3,10 @@ import Model.DataStructure.*;
 import Model.DataStructure.DataStructureInterfaces.IPriorityQueue;
 import Model.Objects.*;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 
 public class Controller {
     private HashTable<String, Agenda> agenda;
@@ -32,18 +36,28 @@ public class Controller {
      * line character and the string representation of the task that was added.
      */
     public String addTask(String id, String name, String description, String dateLimit, int priority) {
-        Task task = new Task(id, name, description, dateLimit, priority);
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd"); // El formato de fecha que se espera
+        Task task = new Task(id, name, description, null, priority);
 
-        if (task.getPriority() == 0) {
-            queue.add(task);
-            agenda.insert(task.getId(),task);
-        } else {
-            priorityTasks.insert(task.getPriority(), task);
-            agenda.insert(task.getId(),task);
+        try {
+            Date parsedDate = dateFormat.parse(dateLimit);
+            task.setDateLimit(parsedDate);
+
+            if (task.getPriority() == 0) {
+                queue.add(task);
+                agenda.insert(task.getId(), task);
+            } else {
+                priorityTasks.insert(task.getPriority(), task);
+                agenda.insert(task.getId(), task);
+            }
+            userAction(0, task);
+
+            return "Se agrego correctamente" + "\n" + task.toString();
+        } catch (ParseException e) {
+            return "Error: La fecha no está en el formato esperado (yyyy-MM-dd)";
         }
-        userAction(0, task);
-        return "Se agrego correctamente" + "\n" + task.toString();
     }
+
 
     /**
      * The function adds a reminder to an agenda and returns a success message.
@@ -60,10 +74,19 @@ public class Controller {
      * @return The method is returning the string "Se agrego correctamente"
      */
     public String addReminder(String id, String name, String description, String dateLimit, int priority) {
-        Reminder reminder = new Reminder(id, name, description, dateLimit, priority);
-        agenda.insert(id, reminder);
-        userAction(0, reminder);
-        return "Se agrego correctamente";
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd"); // El formato de fecha que se espera
+        Reminder reminder = new Reminder(id, name, description, null, priority); // Crear un Reminder sin fecha por ahora
+
+        try {
+            Date parsedDate = dateFormat.parse(dateLimit);
+            reminder.setDateLimit(parsedDate);
+
+            agenda.insert(id, reminder);
+            userAction(0, reminder);
+            return "Se agrego correctamente";
+        } catch (ParseException e) {
+            return "Error: La fecha no está en el formato esperado (yyyy-MM-dd)";
+        }
     }
 
     /**
@@ -102,40 +125,45 @@ public class Controller {
      * The function modifies a specific attribute of an Agenda object based on the given parameters and
      * returns a success message.
      *
-     * @param modify The value that needs to be modified in the agenda (e.g., name, description,
+     * @param newValue The value that needs to be modified in the agenda (e.g., name, description,
      * dateLimit, priority).
      * @param id The id parameter is a String that represents the unique identifier of the agenda item
      * that needs to be modified.
-     * @param m The parameter "m" is a string that represents the field to be modified in the agenda. It
+     * @param propertyToModify The parameter "m" is a string that represents the field to be modified in the agenda. It
      * can have the following values: "name", "description", "dateLimit", or "priority".
      * @return The method is returning a string that represents the modified agenda. The string includes
      * the modified agenda's details and a message indicating that the modification was successful.
      */
-    public String modify(String modify, String id, String m) {
+    public String modify(String propertyToModify, String id, String newValue) {
         Agenda agendaToModify = agenda.search(id);
         Agenda copy = new Task(agendaToModify);
-        switch (m) {
-            case "name":
-                agendaToModify.setName(modify);
 
+        switch (propertyToModify) {
+            case "name":
+                agendaToModify.setName(newValue);
                 break;
             case "description":
-                agendaToModify.setDescription(modify);
-
+                agendaToModify.setDescription(newValue);
                 break;
             case "dateLimit":
-                agendaToModify.setDateLimit(modify);
-
+                try {
+                    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+                    Date newDate = dateFormat.parse(newValue);
+                    agendaToModify.setDateLimit(newDate);
+                } catch (ParseException e) {
+                    return "Error: La fecha no está en el formato esperado (yyyy-MM-dd)";
+                }
                 break;
             case "priority":
-                agendaToModify.setPriority(Integer.parseInt(modify));
+                int newPriority = Integer.parseInt(newValue);
+                agendaToModify.setPriority(newPriority);
                 break;
-
             default:
-                break;
+                return "Propiedad a modificar no válida";
         }
+
         userAction(2, copy);
-        return  toString() + "Se modifico correctamente";
+        return toString() + "Se modificó correctamente";
     }
 
     /**
@@ -157,30 +185,36 @@ public class Controller {
      *
      * @return The method is returning a String that represents the result of the undone action.
      */
-    public String undone(){
+    public String undone() {
         String undone = "";
         if (userActionsStack.isEmpty()) {
             return "No hay acciones para deshacer";
         }
         UserAction userAction = userActionsStack.pop();
-        switch (userAction.getAction()){
+        switch (userAction.getAction()) {
             case ADD:
                 deleteTask(userAction.getTaskDetails().getId());
-                undone = "Se elimino la ultima accion";
+                undone = "Se eliminó la última acción";
                 break;
             case DELETE:
-                addTask(userAction.getTaskDetails().getId(), userAction.getTaskDetails().getName(), userAction.getTaskDetails().getDescription(), userAction.getTaskDetails().getDateLimit(), userAction.getTaskDetails().getPriority());
-                undone = "Se agrego la ultima accion";
+                // Convertir la fecha a una cadena antes de agregar la tarea nuevamente
+                SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+                String dateLimitString = dateFormat.format(userAction.getTaskDetails().getDateLimit());
+                addTask(userAction.getTaskDetails().getId(), userAction.getTaskDetails().getName(), userAction.getTaskDetails().getDescription(), dateLimitString, userAction.getTaskDetails().getPriority());
+                undone = "Se agregó la última acción";
                 break;
             case MODIFY:
                 deleteTask(userAction.getTaskDetails().getId());
-                addTask(userAction.getTaskDetails().getId(), userAction.getTaskDetails().getName(), userAction.getTaskDetails().getDescription(), userAction.getTaskDetails().getDateLimit(), userAction.getTaskDetails().getPriority());
-                undone = "se deshizo la ultima accion";
+                // Convertir la fecha a una cadena antes de agregar la tarea nuevamente
+                SimpleDateFormat modifyDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+                String modifyDateLimitString = modifyDateFormat.format(userAction.getTaskDetails().getDateLimit());
+                addTask(userAction.getTaskDetails().getId(), userAction.getTaskDetails().getName(), userAction.getTaskDetails().getDescription(), modifyDateLimitString, userAction.getTaskDetails().getPriority());
+                undone = "Se deshizo la última acción";
                 break;
         }
         return undone;
-
     }
+
     /**
      * The function "mostrarEstadoTareas" returns a string representation of the last user action
      * performed.
@@ -201,7 +235,6 @@ public class Controller {
 
         return "La ultima accion fue \n"+ estadoTareas.toString();
     }
-
 
 
 

@@ -1,14 +1,16 @@
 package Model.Objects;
 
+import java.util.Date;
+
 public class Agenda {
     private String id;
     private String name;
     private String description;
-    private String dateLimit;
+    private Date dateLimit;
     private int priority;
 
 
-    public Agenda(String id, String name, String description, String dateLimit, int priority) {
+    public Agenda(String id, String name, String description, Date dateLimit, int priority) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -40,11 +42,11 @@ public class Agenda {
         this.description = description;
     }
 
-    public String getDateLimit() {
+    public Date getDateLimit() {
         return dateLimit;
     }
 
-    public void setDateLimit(String dateLimit) {
+    public void setDateLimit(Date dateLimit) {
         this.dateLimit = dateLimit;
     }
 
